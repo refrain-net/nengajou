@@ -24,7 +24,7 @@ function draw(image) {
   context.fillText('　　　　　　　二〇二一年　元旦', 30, 330);
   try {
     const imageData = context.getImageData(0, 0, 500, 740);
-    dest.getContext('2d').putImageData(imageData, 0, 0);
+    context.putImageData(imageData, 0, 0);
   } catch (error) {
     window.alert(error);
   }
